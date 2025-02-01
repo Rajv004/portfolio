@@ -8,6 +8,14 @@ input[type=number] {
     -moz-appearance: textfield !important;
 }
 
+.laptopImage {
+    display: block !important;
+}
+
+.phoneImage {
+    display: none !important;
+}
+
 @media (max-width: 1220px) {
     .left-sidebar {
         top: 100px !important;
@@ -23,5 +31,12 @@ input[type=number] {
     .email {
         font-size: 16px !important;
     }
-}
 
+    .laptopImage {
+        display: none !important;
+    }
+
+    .phoneImage {
+        display: block !important;
+    }
+}
