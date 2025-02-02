@@ -30,7 +30,7 @@ document.getElementById("send-message").addEventListener("click", (e) => {
     } else {
         emailjs.send("service_ha17qre", "template_r3o0mmw", emailJson)
             .then(function (response) {
-                popupShow("success", "Please enter valid email.. !")
+                popupShow("success", "Thank you.")
             }, function (error) {
                 popupShow("danger", "Something went wrong. Please try again.. !");
             });
@@ -43,9 +43,7 @@ function popupShow(type, message) {
     const popup = document.createElement("div");
     popup.id = "popup";
     popup.textContent = message;
-    if (type == "success") {
-        popup.classList.add("success");
-    }
+    popup.classList.add(type);
     document.body.appendChild(popup);
     setTimeout(() => {
         popup.remove();

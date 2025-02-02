@@ -59,6 +59,11 @@ input[type=number] {
     font-weight: 600;
 }
 
+#popup.success {
+    color: green;
+    border-bottom: 1px solid green;
+}
+
 @keyframes popup {
 
     10%,
