@@ -40,3 +40,38 @@ input[type=number] {
         display: block !important;
     }
 }
+
+/* // notify design  */
+#popup {
+    position: fixed;
+    top: -60px;
+    right: 10px;
+    background: white;
+    border-bottom: 1px solid red;
+    padding: 15px 30px;
+    font-size: 15px;
+    width: 300px;
+    font-family: sans-serif;
+    color: #ffffff;
+    animation: popup 5s ease-in-out;
+    color: red;
+    text-align: start;
+    font-weight: 600;
+}
+
+@keyframes popup {
+
+    10%,
+    90% {
+        top: 20px;
+    }
+
+    100% {
+        top: -60px;
+    }
+}
+
+.contact-area .contact-content form .input-group input:autofill {
+    background-color: none;
+    background: none;
+}
