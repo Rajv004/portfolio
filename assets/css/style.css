@@ -80,3 +80,9 @@ input[type=number] {
     background-color: none;
     background: none;
 }
+
+.portfolio-categories {
+    padding: 12px 15px;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: inherit;
+}
